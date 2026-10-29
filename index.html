@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VR Dak & Gevel - dakwerk en gevelwerk door heel Nederland. Neem vrijblijvend contact op voor uw project.">
+  <meta name="theme-color" content="#123d70">
+  <title>VR Dak & Gevel | Dak- en gevelwerk door heel Nederland</title>
+  <style>
+    :root{--navy:#123d70;--blue:#1769aa;--sky:#eaf4fc;--ink:#183047;--muted:#617386;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(10px);z-index:5;border-bottom:1px solid #e6edf4}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy);font-size:1.15rem;letter-spacing:.2px}
+    .mark{width:43px;height:43px;border-radius:12px;background:var(--navy);display:grid;place-items:center;color:#fff}
+    .links{display:flex;align-items:center;gap:25px;font-size:.94rem;font-weight:700}.links a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:8px;background:var(--blue);color:#fff;font-weight:700;border:2px solid var(--blue);transition:.2s}
+    .btn:hover{background:var(--navy);border-color:var(--navy);transform:translateY(-1px)}
+    .btn.outline{background:transparent;color:var(--navy);border-color:#b8cee2}.btn.outline:hover{background:var(--sky)}
+    .hero{background:linear-gradient(115deg,#f4f9fe 0%,#e6f2fc 58%,#d6eafb 100%);overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:76px 0 82px}
+    .eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.06;letter-spacing:-1.8px;color:var(--navy);margin:14px 0 20px}
+    .lead{font-size:1.15rem;color:#50677d;max-width:570px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-art{min-height:340px;border-radius:24px;background:linear-gradient(150deg,#164d83,#0e3159);position:relative;overflow:hidden;box-shadow:0 22px 55px #123d7026}
+    .hero-art:before{content:"";position:absolute;width:420px;height:420px;border:2px solid #ffffff26;border-radius:50%;right:-110px;top:-160px}
+    .hero-art:after{content:"";position:absolute;width:310px;height:310px;border:2px solid #ffffff26;border-radius:50%;right:-30px;top:-80px}
+    .roof-illustration{position:absolute;inset:0;display:grid;place-items:center}
+    .roof-illustration svg{width:88%;max-width:480px;filter:drop-shadow(0 18px 18px #001a3340)}
+    .trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#50677d;font-size:.9rem;font-weight:700}
+    .trust span:before{content:"✓";color:#1681c8;font-weight:900;margin-right:8px}
+    section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}
+    h2{font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;color:var(--navy);margin:10px 0 14px;letter-spacing:-.7px}
+    .section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{padding:28px;border:1px solid #e2ebf3;border-radius:16px;background:#fff;box-shadow:0 8px 25px #123d7008}
+    .icon{width:52px;height:52px;border-radius:13px;background:var(--sky);display:grid;place-items:center;color:var(--blue);margin-bottom:18px}
+    .card h3{color:var(--navy);font-size:1.2rem;margin:0 0 8px}.card p{color:var(--muted);margin:0}
+    .band{background:var(--sky)}.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .checks{list-style:none;padding:0;margin:22px 0}.checks li{margin:12px 0;color:#435c73}.checks li:before{content:"✓";font-weight:900;color:var(--blue);margin-right:11px}
+    .note{background:#fff;border:1px solid #dceaf6;border-radius:18px;padding:30px}
+    .note strong{display:block;color:var(--navy);font-size:1.25rem;margin-bottom:8px}
+    .contact{background:linear-gradient(135deg,#123d70,#1769aa);color:#fff}
+    .contact h2,.contact .eyebrow{color:#fff}.contact .section-head p{color:#e2effa}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .contact-item{background:#ffffff12;border:1px solid #ffffff35;border-radius:14px;padding:22px}
+    .contact-item small{display:block;color:#c9e3f7;text-transform:uppercase;letter-spacing:1px;font-weight:700;margin-bottom:5px}
+    .contact-item a{font-size:1.15rem;font-weight:700;overflow-wrap:anywhere}
+    .contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .contact .btn{background:#fff;color:var(--navy);border-color:#fff}.contact .btn.outline{background:transparent;color:#fff;border-color:#ffffff80}
+    footer{background:#0c2d50;color:#c5d6e5;padding:25px 0;font-size:.88rem}
+    .footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.links{display:none}.hero-grid,.band-grid{grid-template-columns:1fr;gap:30px}.hero-grid{padding:55px 0}.hero-art{min-height:260px}.cards{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}section{padding:58px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="VR Dak & Gevel home">
+      <span class="mark"><svg width="29" height="29" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M4 20 20 7l16 13" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 18v15h20V18M16 33V23h8v10" stroke="white" stroke-width="3" stroke-linejoin="round"/></svg></span>
+      <span>VR DAK &amp; GEVEL</span>
+    </a>
+    <nav class="links" aria-label="Hoofdnavigatie"><a href="#diensten">Diensten</a><a href="#over">Over ons</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="#contact">Contact opnemen</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Dak- en gevelwerk door heel Nederland</div>
+        <h1>Een sterk dak.<br>Een verzorgde gevel.</h1>
+        <p class="lead">VR Dak &amp; Gevel helpt u met werkzaamheden aan uw dak en gevel. Neem contact op om uw plannen te bespreken of een vrijblijvende offerte aan te vragen.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/31626631514?text=Hallo%20VR%20Dak%20%26%20Gevel%2C%20ik%20wil%20graag%20informatie%20of%20een%20offerte%20aanvragen.">WhatsApp ons</a>
+          <a class="btn outline" href="tel:+31626631514">Bel direct</a>
+        </div>
+        <div class="trust"><span>Actief door heel Nederland</span><span>Persoonlijk contact</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustratie van een huis met een stevig dak">
+        <div class="roof-illustration">
+          <svg viewBox="0 0 520 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M54 166 260 30l206 136" stroke="#fff" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M94 150v165h332V150" fill="#EAF4FC" stroke="#fff" stroke-width="9" stroke-linejoin="round"/>
+            <path d="M72 167 260 43l188 124" stroke="#72B8EA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M219 315V207h82v108" fill="#B7D9F2" stroke="#164D83" stroke-width="7"/>
+            <path d="M127 202h62v62h-62zM331 202h62v62h-62z" fill="#8CC5ED" stroke="#164D83" stroke-width="7"/>
+            <path d="M158 202v62M127 233h62M362 202v62M331 233h62" stroke="#fff" stroke-width="5"/>
+            <path d="M75 315h370" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="diensten">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Waarmee kunnen we helpen?</div>
+        <h2>Onze werkzaamheden</h2>
+        <p>Voor werkzaamheden aan uw dak of gevel kunt u contact opnemen. We bespreken graag wat er nodig is voor uw woning of pand.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m2 12 10-8 10 8M5 10v10h14V10M9 20v-6h6v6"/></svg></div><h3>Dakwerk</h3><p>Neem contact op voor vragen over dakwerk, onderhoud, reparatie of renovatie.</p></article>
+        <article class="card"><div class="icon"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V4h16v17M8 8h2m4 0h2M8 12h2m4 0h2M8 16h2m4 0h2M2 21h20"/></svg></div><h3>Gevelwerk</h3><p>Bespreek uw wensen voor gevelonderhoud, gevelherstel of gevelrenovatie.</p></article>
+        <article class="card"><div class="icon"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8m0-5v5h5M12 7v5l3 2"/></svg></div><h3>Onderhoud &amp; renovatie</h3><p>Heeft uw dak of gevel aandacht nodig? Leg uw situatie aan ons voor.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="over">
+    <div class="wrap band-grid">
+      <div>
+        <div class="eyebrow">VR Dak &amp; Gevel</div>
+        <h2>Uw project begint met persoonlijk contact.</h2>
+        <p>Of het nu om een kleine reparatie of een groter project gaat: vertel ons wat u nodig heeft. We zijn actief door heel Nederland.</p>
+        <ul class="checks"><li>Werkzaam in heel Nederland</li><li>Direct contact via telefoon of WhatsApp</li><li>Informeer vrijblijvend naar de mogelijkheden</li></ul>
+        <a class="btn" href="#contact">Bespreek uw project</a>
+      </div>
+      <div class="note">
+        <strong>Een vraag of een project in gedachten?</strong>
+        <p>Stuur een bericht met een korte omschrijving. U kunt eventueel foto's van uw dak of gevel meesturen via WhatsApp, zodat u uw situatie makkelijk kunt laten zien.</p>
+        <a href="https://wa.me/31626631514?text=Hallo%20VR%20Dak%20%26%20Gevel%2C%20ik%20wil%20graag%20mijn%20project%20bespreken." style="color:#1769aa;font-weight:800">Start een WhatsApp-gesprek →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Neem contact op</div>
+        <h2>We horen graag van u.</h2>
+        <p>Bel, mail of stuur direct een WhatsApp-bericht. We bespreken graag uw vraag of project.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item"><small>Telefoon</small><a href="tel:+31626631514">06 26 63 15 14</a></div>
+        <div class="contact-item"><small>E-mail</small><a href="mailto:valentinoromanov907@gmail.com">valentinoromanov907@gmail.com</a></div>
+        <div class="contact-item"><small>Werkgebied</small><a href="#contact">Heel Nederland</a></div>
+        <div class="contact-item"><small>WhatsApp</small><a href="https://wa.me/31626631514">Stuur een WhatsApp-bericht</a></div>
+      </div>
+      <div class="contact-actions">
+        <a class="btn" href="https://wa.me/31626631514?text=Hallo%20VR%20Dak%20%26%20Gevel%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen.">Offerte aanvragen via WhatsApp</a>
+        <a class="btn outline" href="mailto:valentinoromanov907@gmail.com?subject=Offerteaanvraag%20VR%20Dak%20%26%20Gevel">E-mail sturen</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> VR Dak &amp; Gevel</span><span>Dak- en gevelwerk door heel Nederland</span></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
